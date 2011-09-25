@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<head>
+		<title>plupload</title>
+        <style type='text/css'>
+            body {font-family: verdana}
+            .error {border: solid 1px red;}
+            .error_text { color: red; font-size: 10px;}
+            td {padding: 3px;}
+            
+        </style>
+	</head>
+	<body>
+	    <h1>plupload Demo</h1>
+        <p>This is a dummy page to show off your plugin</p>
+      <div class="container"></div>
+		<script type='text/javascript' 
+                src='../steal/steal.js'>   
+        </script>
+		<script type='text/javascript'>
+			steal('plupload', function(){
+				$('.container').file_uploader({
+				  callback: function(up,files){
+				    console.log(up,files);
+				  }
+				});
+			})
+		</script>
+	</body>
+</html>
