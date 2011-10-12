@@ -1,10 +1,10 @@
 steal(
   'jquery',
   'jquery/controller',
-  '//plupload/resources/js/jquery.plupload.queue/css/jquery.plupload.queue.css',
-  '//plupload/resources/js/plupload.full.js').then(
-  '//plupload/resources/js/plupload.browserplus.js').then(
-  '//plupload/resources/js/jquery.plupload.queue/jquery.plupload.queue.js').then(
+  '//plugins/plupload/resources/js/jquery.plupload.queue/css/jquery.plupload.queue.css',
+  '//plugins/plupload/resources/js/plupload.full.js').then(
+  '//plugins/plupload/resources/js/plupload.browserplus.js').then(
+  '//plugins/plupload/resources/js/jquery.plupload.queue/jquery.plupload.queue.js').then(
   function($){
     $.Controller('fileUploader',
     {},
